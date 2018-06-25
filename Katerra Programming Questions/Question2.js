@@ -5,12 +5,16 @@ var length = arr.length;
 var new_length = 0;
 
 for (var i = 0; i < length; i++) {
-    if (arr[i].charCodeAt(0) < 127)
+    
+    //Check for the integer representation of characters using charCodeAt
+    if (arr[i].charCodeAt(0) <= 127)
     {
       new_length = new_length + 1;
     }
-    else if(arr[i].charCodeAt(0)>=128){
+    
+    else if(arr[i].charCodeAt(0) >= 128){
       new_length = new_length + 1;
+      //Taking two consecutive characters when the charcode is 128 or higher
       i = i + 1;
     }
     }
