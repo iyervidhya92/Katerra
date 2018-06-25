@@ -13,6 +13,8 @@ var head = n3;
 
 // Write code here
 
+//using two pointers here, one moves by two nodes and second by one node.
+//when the first pointer reaches the end, the other pointer is at the middle
 var first = head;
 var second = head;
 
