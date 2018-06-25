@@ -1,5 +1,6 @@
 function length_of_(msg)
 {
+	//converting the string to array using regex
 	var arr = msg.split(/(?=.)/u)
 	var length = arr.length
 	return length
